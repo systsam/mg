@@ -1,0 +1,60 @@
+micrograd notes:
+karpathy's zero to hero: https://www.youtube.com/watch?v=VMj-3S1tku0&list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ
+
+what is a 'micrograd'?
+ - a tiny autograd engine
+
+auto gradient. a piece of NN architecture or a function of ML/DL?
+ - implements back prop
+
+back prop
+ - an algorithm allowing you to efficiently eval gradient of loss function wrt weights
+   - tune weights to minimize loss function
+
+creates an expression graph - various operations on value objects a & b (containing some value(s)) - that yield g.
+can forward pass = running through operations getting value of g.
+or backwards, using chain rule to obtain derivative of g in respect to a & b. ~how a & b effect g.
+---
+"NN are just mathematical expressions"
+ - input data and weights of NN as inputs, outputting predictions or loss function
+---
+
+micrograd code:
+ - engine
+    - contains autograd
+ - NN
+
+
+what is a gradient?
+where does this fall into broader concepts like NN/DL?
+what's a 'computational graph'?
+
+derivative? rate of change or something
+ - how does the function f(x) respond to increase/decrease of a by h. what is the effect on slope?
+    - slope of the change of function
+how find derivative of a function?
+ - 3*x**2 - 4*x + 5
+    - 6(3) - 4 = 14
+    - 3*2 = 6(x) - 4?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
