@@ -4,12 +4,11 @@ karpathy's zero to hero: https://www.youtube.com/watch?v=VMj-3S1tku0&list=PLAqhI
 what is a 'micrograd'?
  - a tiny autograd engine
 
-auto gradient. a piece of NN architecture or a function of ML/DL?
- - implements back prop
+auto gradient?
+ - a program that tracks and computes gradients of functions automatically. 
 
 back prop
- - an algorithm allowing you to efficiently eval gradient of loss function wrt weights
-   - tune weights to minimize loss function
+ - an algorithm used in autograd engine, walks backward through comp graph applying chain rule
 
 creates an expression graph - various operations on value objects a & b (containing some value(s)) - that yield g.
 can forward pass = running through operations getting value of g.
@@ -36,7 +35,8 @@ how find derivative of a function?
  - 3*x**2 - 4*x + 5
     - 6(3) - 4 = 14
     - 3*2 = 6(x) - 4?
-
+hyperbolic functions
+tanh?
 
 
 
